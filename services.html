@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DataForge</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<script type="text/javascript">
+function check(){
+alert("going to login landing page");
+
+}
+</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+<!--start-banner-->
+	<div class="banner" id="home">
+			<div class="header">
+			<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						<li><a href="services.html">SOLUTIONS</a></li>
+						<li><a href="login.jsp">PROGRAMS</a></li>
+						<li><a href="#">GET STARTED</a></li>
+					</ul>
+
+			</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="banner-main">
+				<div class="container">	
+					<div class="banner-top bnr-top">
+						<h1>Dive Into the New Age of Accelerated Analytics</h1>
+					</div>
+				</div>
+			</div>
+		
+	<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->	
+	<!--end-banner-->
+	<div class="banner-top bnr-top">
+		<h1>Our Services</h1>
+	</div>
+</div>	
+	 <!-- Service table Menu -->
+
+	<!--start-carrer-->
+	<div class="banner1">
+		<div class="container">
+			
+			<div class="tabs-box">
+			<ul class="tabs-menu">
+				<li><a href="#tab1"><span> </span>Data Analysis</a></li>
+				<li><a href="#tab2"><span> </span>Data Integration</a></li>
+				<li><a href="#tab3"><span> </span>ETL (Extract, Transform, Load)</a></li>
+			</ul>
+			<div class="clearfix"> </div>
+			<div class="tab-grids">
+				<div id="tab1" class="tab-grid">
+					<div class="tb-one">
+						<h3>Tailored Data Analysis & Visualization Services</h3>
+						<p>DataForge specializes in transforming raw data into valuable insights. We offer <b>customized consulting 						   services</b> to help businesses maximize efficiency through data analysis and visualization</p>
+					</div>
+					<div class="tb-one">
+						<h3>Advanced Data Management Platform</h3>
+						<p>Our platform is designed to build and manage data pipelines that scale data transformation processes 						   with speed and reliability. It leverages <b>AI</b> to enable natural language-based interaction with 						   enterprise data platforms, simplifying complex data workflows</p>
+					</div>
+					<div class="tb-one">
+						<h3>Powerful Data Integration & Cleansing Tools</h3>
+						<p>DataForge provides tools for, <b>Data integration</b> from multiple sources , <b>Data cleansing<b> to 						   ensure quality, <b>Transformation tools<b> for preparing data for analysis and reporting </p>
+					</div>
+					<div class="tb-one">
+						<div class="tb-two"></div></div>
+				</div>
+				<div id="tab2" class="tab-grid">
+					<div class="tb-one">
+						<h3>Centralized Data Management Hub</h3>
+						<p>DataForge provides a unified platform to collect, process, and analyze data from multiple sources—							   structured, unstructured, and semi-structured. This helps businesses streamline access and transformation 						   of data into actionable insights </p>
+					</div>
+					<div class="tb-one">
+						<h3>Custom Data Pipelines & Automation</h3>
+						<p>Users can build custom data pipelines, automate repetitive tasks, and monitor data quality in real time. 						   This reduces manual effort and enhances operational efficiency </p>
+					</div>
+					<div class="tb-one"><div class="tb-two"></div></div>
+				</div>
+				<div id="tab3" class="tab-grid">
+					<div class="tb-one">
+						<h3>Powerful ETL Engine: Talend Integration</h3>
+						<p>DataForge uses Talend as its core ETL and Master Data Management engine. This enables seamless 							   integration and scheduling of data workflows, ensuring that data from various sources is efficiently      						   extracted, transformed, and loaded into target systems .</p>
+					</div><div class="tb-one"><div class="tb-two"></div></div>				
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--start-carrer-->
+	<!----- Comman-js-files ----->
+		<script>
+			$(document).ready(function() {
+				$("#tab2").hide();
+				$("#tab3").hide();
+				$(".tabs-menu a").click(function(event){
+					event.preventDefault();
+					var tab=$(this).attr("href");
+					$(".tab-grid").not(tab).css("display","none");
+					$(tab).fadeIn("slow");
+				});
+			});
+		</script>
+		<!----- Comman-js-files ----->
+
+
+	<!--start-footer-->
+	<div class="banner1">
+		<div class="container">
+			<div class="footer-main">
+				<div class="contact">
+					<div class="col-md-8 contact-left">
+						<a href="index.html"><img src="images/logo1.png" alt="" /></a>
+						<p>At  <b>DataForge</b> , we help business unlock the power of their data. We specialize in data analysis     						   and data integration , turning raw numbers into clear insights that drive smarter decisions...</p>
+					</div>
+					<div class="col-md-4 contact-right">
+						<h3>QUICK CONTACTS</h3>
+						<p>+XX XXX XXX XXX X</p>
+						<p><a href="mailto:example@email.com">@dataforge.com</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="footer-bottom">
+					<div class="col-md-4 footer-left">
+						<ul>
+							<li><a href="#"><span class="fb"> </span></a></li>
+							<li><a href="#"><span class="twit"> </span></a></li>
+							<li><a href="#"><span class="sky"> </span></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-footer-->
+
+</body>
+</html>

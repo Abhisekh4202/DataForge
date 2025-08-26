@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DataForge</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+<!--start-smoth-scrolling-->
+</head>
+<body>
+<!--start-banner-->
+	<div class="banner" id="home">
+			<div class="header">
+			
+			<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						<li><a href="services.html">SOLUTIONS</a></li>
+						<li><a href="login.jsp">PROGRAMS</a></li>
+						<li><a href="#">GET STARTED</a></li>
+						
+
+					</ul>
+			</div>
+				<div class="clearfix"></div>
+			
+			</div>
+			<div class="banner-main">
+				<div class="container">	
+					<div class="banner-top">
+						<h1>DataForge </h1>
+						<h2>The New Standard in Data Analysis</h2>
+                                                <h2>Use Data to Get a 360-Degree View of Your Business</h2>
+						</div>
+						
+					</div>
+				</div>
+					<div class="error">
+						<div class="container">
+							<div class="error-main">
+							<div class="error-btn">
+							<a href="services.html">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	
+	<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		  <!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->		
+	<!--end-banner-->
+
+	<!--start-number-->
+	<div class="banner1">
+		<div class="container">
+			<div class="number-main">
+				<h3>Let Your Data Take Your Business to Higher Grounds ;)</h3>
+			</div>
+			<div class="number-bottom">
+				<ul>
+					<li>
+						<h4>0</h4>
+						<p>Business Partners</p>
+					</li>
+					<li>
+						<h4>0</h4>
+						<p>Project Installed</p>
+					</li>
+					<li>
+						<h4>0</h4>
+						<p>Services</p>
+					</li>
+					<li>
+						<h4>1</h4>
+						<p>Years Of Experience</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--end-number-->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+	<!-- Portfolio Ends Here -->
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+		// http://mixitup.io
+		$('#portfoliolist').mixitup({
+			targetSelector: '.portfolio',
+			filterSelector: '.filter',
+			effects: ['fade'],
+			easing: 'snap',
+			// call the hover effect
+			onMixEnd: filterList.hoverEffect()
+		});				
+	
+	},
+	
+	hoverEffect: function () {
+	
+		// Simple parallax effect
+		$('#portfoliolist .portfolio').hover(
+			function () {
+				$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+				$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			},
+			function () {
+				$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+				$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+			}		
+		);				
+	
+	}
+
+};
+
+// Run the show!
+	filterList.init();
+	
+});	
+</script>
+	<!--start-footer-->
+	<div class="banner1">
+		<div class="container">
+			<div class="footer-main">
+				<div class="contact">
+					<div class="col-md-8 contact-left">
+						<a href="index.html"><img src="images/logo1.png" alt="" /></a>
+						<p>At  <b>DataForge</b> , we help business unlock the power of their data. We specialize in data analysis     						   and data integration , turning raw numbers into clear insights that drive smarter decisions...</p>
+					</div>
+					<div class="col-md-4 contact-right">
+						<h3>QUICK CONTACTS</h3>
+						<p>+XX XXX XXX XXX X</p>
+						<p><a href="mailto:example@email.com">@dataforge.com</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="footer-bottom">
+					<div class="col-md-4 footer-left">
+						<ul>
+							<li><a href="#"><span class="fb"> </span></a></li>
+							<li><a href="#"><span class="twit"> </span></a></li>
+							<li><a href="#"><span class="sky"> </span></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-footer-->
+</body>
+</html>
